@@ -95,7 +95,6 @@ final class TaskListViewController: UITableViewController {
         
         alert.addTextField { textField in
             textField.text = task.title
-            
         }
         
         let saveAction = UIAlertAction(title: "Save Task", style: .default) { [unowned self] _ in
