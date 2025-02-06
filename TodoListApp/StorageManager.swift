@@ -40,5 +40,10 @@ final class StorageManager {
         context.delete(task)
         saveContext()
     }
+    
+    func editTask(task: TodoTask, newTitle: String) {
+        task.title = newTitle
+        saveContext()
+    }
 }
 
